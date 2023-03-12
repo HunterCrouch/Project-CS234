@@ -1,1 +1,1 @@
-
+I wrote the basic list of methods and atributes for the project then after someone else formated it i made into a UML drawio pdf file
