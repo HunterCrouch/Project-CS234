@@ -1,2 +1,2 @@
 During the our meeting I mentioned that we should use a subclass for the the class of vehicle to have inheritance involved in our UML diagrams.
-I also help give out some ideas to have an ArrayList of cars for the vehicle class. 
+I also help give out some ideas to have an ArrayList of cars for the vehicle class that are available.
