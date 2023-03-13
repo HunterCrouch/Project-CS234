@@ -1,0 +1,1 @@
+Helped with brainstorming and coming up with ideas on what some of the attributes, classes, and methods should be. Created a rough draft of the UML diagram but ultimately decided to go with Hunter's UML.
