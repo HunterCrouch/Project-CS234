@@ -18,7 +18,7 @@ public class Main
 	{
 																						
 		action.initiateDB(customers,vehicles,employees);
-		Payment py = new Payment(vehicles.get(0),customers.get(0));	
+		//Payment py = new Payment(vehicles.get(0),customers.get(0));	
 		mainMenu(customers);
 
 	}
