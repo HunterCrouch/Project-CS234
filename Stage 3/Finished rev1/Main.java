@@ -1,11 +1,8 @@
 // only the customer's menu works
-
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main 
-{
+public class Main {
 	static Scanner in = new Scanner(System.in);
 	static ArrayList<Customer> customers = new ArrayList<>(); 
 	static ArrayList<Vehicle> vehicles = new ArrayList<>();
@@ -14,8 +11,8 @@ public class Main
 	static DataBaseActions action = new DataBaseActions();
 	
 	
-	public static void main(String[] args) 				// main method calls the first menu
-	{
+	public static void main(String[] args) { // main method calls the first menu
+
 																						
 		action.initiateDB(customers,vehicles,employees,payments);
 		//Payment py = new Payment(vehicles.get(0),customers.get(0));	
@@ -23,8 +20,8 @@ public class Main
 
 	}
 
-	public static void vehicleMenu(ArrayList<Vehicle> vehicles)
-	{
+	public static void vehicleMenu(ArrayList<Vehicle> vehicles){
+	 	
 		int selection = showMenu();
 		
 		switch(selection)																
@@ -46,7 +43,8 @@ public class Main
 			vehicleMenu(vehicles);
 			break;
 		case 5:
-		action.printVehicleReport(vehicles);
+			System.out.println("List of Vehicles in our car lot:");
+			action.printVehicleReport(vehicles);
 			vehicleMenu(vehicles);
 			break;
 		case 6:
@@ -56,20 +54,20 @@ public class Main
 	}
 	public static void customerMenu(ArrayList<Customer> customers)
 	{
-		int selection = showMenu();														// shows the customers menu options
+		int selection = showMenu();// shows the customers menu options
 		
-		switch(selection)																// the option is checked
+		switch(selection)// the option is checked
 		{
 		case 1:
 			action.searchCustomer(customers);                   		
-			customerMenu(customers);								// customer menu method is called after option is selected to keep the program running
+			customerMenu(customers);// customer menu method is called after option is selected to keep the program running
 			break;
 		case 2:
 			action.addCustToDB(customers);                   		
 			customerMenu(customers);
 			break;
 		case 3: 
-			action.removeCustFromDB(customers);						// menu is called but with an updated parameter/ updated array
+			action.removeCustFromDB(customers);// menu is called but with an updated parameter/ updated array
 			customerMenu(customers);
 			break;
 		case 4: 
@@ -77,6 +75,7 @@ public class Main
 			customerMenu(customers);
 			break;
 		case 5:
+			System.out.println("List of Customers are listed below:");
 			action.printCustReport(customers);
 			customerMenu(customers);
 			break;
@@ -112,6 +111,7 @@ public class Main
 			employeeMenu(employee);	
 			break;
 		case 5:
+			System.out.println("The List of Employee's are listed below:");
 			action.printEmployeeReport(employee);
 			employeeMenu(employee);	
 			break;
@@ -144,6 +144,7 @@ public class Main
 			paymentMenu(payments,customer);
 			break;
 		case 5:
+			System.out.println("Payment Information listed below:");
 			action.printPayments(payments);
 			paymentMenu(payments,customer);
 			break;
@@ -153,8 +154,8 @@ public class Main
 		
 	}	
 	
-	public static void mainMenu()															// first menu will lead to more menus
-	{
+	public static void mainMenu() {// first menu will lead to more menus
+		System.out.println("Welcome to Our Car Rental Management System");
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		System.out.println("Select an option: \n1.) Customers \n2.) Vehicles \n3.) Employees \n4.) Payment \n5.) Quit");
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -176,7 +177,7 @@ public class Main
 		switch(selection)
 		{
 		case 1:
-			customerMenu(customers);                   							// only the customer option is working right now
+			customerMenu(customers);// only the customer option is working right now
 			break;
 		case 2:
 			vehicleMenu(vehicles);
@@ -188,13 +189,13 @@ public class Main
 			paymentMenu(payments,customers);
 			break;
 		case 5:
-			System.out.println("bye.");			// only in option 5 is menu method no longer called
+			System.out.println("bye.");// only in option 5 is menu method no longer called
 		}
 		
 		
 		
 	}
-	public static int showMenu()   																	// just a method to print menu options for the sub menus
+	public static int showMenu()// just a method to print menu options for the sub menus
 	{
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		System.out.println("Select an option: \n1.) Search ID/Name  \n2.) Add \n3.) Remove \n4.) Modify \n5.) Print Report \n6.) Main Menu");
@@ -217,6 +218,4 @@ public class Main
 		return selection;
 	}
 	
-	
-
 }
