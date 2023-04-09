@@ -1,5 +1,7 @@
 import java.text.DecimalFormat;
 public class Employee {
+	//instance varaible listed below
+	//variables are initially declared as private, will need a public method to access 
     private static final DecimalFormat df = new DecimalFormat("0.00");
     private String name;
     private String address;
@@ -13,57 +15,111 @@ public class Employee {
     private double taxedWage=0;
     private int employeeId;
     
-    public void setName(String nm){name = nm;}
-    public String getName(){return name;} 
+    //sets the employee's name
+    public void setName(String nm) {
+    	name = nm;
+    }
+    //recieves the employee's name
+    public String getName() {
+    	return name;
+    } 
 
-    public void setAddress(String add){address=add;}
-    public String getAddress(){return address;}
+    //sets the employee's address
+    public void setAddress(String add) {
+    	address=add;
+    }
+    //recieves the employee's address
+    public String getAddress() {
+    	return address;
+    }
 
-    public void setEthnicity(String eth){ethnicity=eth;}
-    public String getEthnicity(){return ethnicity;}
+    //sets the employee's ethnicity
+    public void setEthnicity(String eth) {
+    	ethnicity=eth;
+    }
+    //recieves the employee's ethnicity
+    public String getEthnicity() {
+    	return ethnicity;
+    }
     
-    public void setGender(String gen){gender=gen;}
-    public String getGender(){return gender;}
+    //sets the employee's gender
+    public void setGender(String gen) {
+    	gender=gen;
+    }
+    //recieves the employee's gender
+    public String getGender() {
+    	return gender;
+    }
     
-    public void setPhoneNumber(String num){phoneNumber=num;}
-    public String getPhoneNumber(){return phoneNumber;}
+    //sets the employee's phone number
+    public void setPhoneNumber(String num) {
+    	phoneNumber=num; 
+    }
+    //recieves the employee's phone number
+    public String getPhoneNumber() {
+    	return phoneNumber;
+    }
+    
+    //sets the employee's hours
+    public void setHours(double hrs) {
+    	hours=hrs;
+    }
+    //recieves the employee's hours
+    public double getHours() {
+    	return hours;
+    }
 
-    public void setHours(double hrs){hours=hrs;}
-    public double getHours(){return hours;}
+    //sets the employee's pay rate
+    public void setPayRate(double pay) {
+    	payRate=pay;
+    }
+    //recieves the employee's pay rate
+    public double getPayRate() { 
+    	return payRate;
+    }
 
-    public void setPayRate(double pay){payRate=pay;}
-    public double getPayRate(){return payRate;}
+    //sets the insurance
+    public void setInsurance(boolean ins) {
+    	insurance=ins;
+    }
+    //recieves the insurance
+    public boolean getInsurance(){
+    	return insurance;
+    }
 
-    public void setInsurance(boolean ins){insurance=ins;}
-    public boolean getInsurance(){return insurance;}
-
-    public void setUntaxedWage()
-    {
+    //sets the untaxed wage for the employee
+    public void setUntaxedWage() {
         unTaxedWage=payRate*hours;
     }
+    //recieves the untaxed wage for the employee
     public double getUntaxedWage()
     {
         setUntaxedWage();
         return unTaxedWage;
     }
 
-    public void setTaxedWage()
-    {
+    //sets the taxed wage for the employee
+    public void setTaxedWage() {
         taxedWage=unTaxedWage*.864;//average tax rate for united states
     }
-    public double getTaxedWage()
-    {
+    //sets the taxed wage for the employee
+    public double getTaxedWage() {
         setTaxedWage();
         return taxedWage;
     }
 
-    public int getEmployeeID(){return employeeId;}
+    //recieves the employee's ID
+    public int getEmployeeID() {
+    	return employeeId;
+    }
+    
+    //toString method that prints out the report for the employee's
     public String toString()
     {
         String s ="";
-        s = "|"+name+"|\t"+address+"| "+ethnicity+" |\t"+gender+"|\t"+phoneNumber+"|\n"+
-        "| hours: "+hours+" | pay rate:"+payRate+" | insurance:"+insurance+" | untaxed wage:"
-        +df.format(unTaxedWage)+" | taxed wage:"+df.format(taxedWage)+"|";
+        s = "| Name: "+name+"| Address: \t"+address+" | Ethnicity: "+ethnicity+" | Gender: \t"+gender+" | Phone-Number: \t"+phoneNumber+"|\n"+
+        "| Hours: "+hours+" | Pay-Rate:"+payRate+" | Insurance:"+insurance+" | Untaxed-Wage:"
+        +df.format(unTaxedWage)+" | Taxed-Wage:"+df.format(taxedWage)+"|\n";
 
 
         return s;
