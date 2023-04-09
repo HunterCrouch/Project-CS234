@@ -1,0 +1,3 @@
+After Agustin made a initial demo of the customer and vehicle classes i program the all the vehicle and inherited classes the employee and then the payment class while adding the method needed in the Main and Database class to implement them. i did not do commenting except on the payment classes since it was somewhat confusing 
+
+i updated the UML file that was used in stage 2 and added everthing new that we had
