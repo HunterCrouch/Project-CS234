@@ -1,6 +1,6 @@
-
-public class Customer 
-{																// a few attribute to demonstrate how the class will work
+public class Customer { //a few attribute to demonstrate how the class will work 																
+	//instance varaible listed below
+	//variables are initially declared as private, will need a public method to access 
 	private String pickUpTime;
 	private String dropOffTime;
 	private String licenseNum;
@@ -12,94 +12,136 @@ public class Customer
 	private String appointPickUp;
 	private String appointDropOff;
 	private boolean carLate;
-	private String custID;										// variables are initially declared as private, will need a public method to access 
+	private String custID;	
 	private String custAddress;
 	
-	public void setPickUpTime(String time){pickUpTime=time;}
-	public String getPickUpTime(){return pickUpTime;}
+	//sets the pickup time
+	public void setPickUpTime(String time) {
+		pickUpTime=time;
+	}
+	//receives the pickup time
+	public String getPickUpTime() {
+		return pickUpTime;
+	}
 
-	public void setDropOffTime(String time){dropOffTime=time;}
-	public String getDropOffTime(){return dropOffTime;}
+	//sets the drop off time
+	public void setDropOffTime(String time) {
+		dropOffTime=time;
+	}
+	//recieves the drop off time
+	public String getDropOffTime() {
+		return dropOffTime;
+	}
 
-	public void setLicenseNumber(String licenNum){licenseNum=licenNum;}
-	public String getLicenseNumber(){return licenseNum;}
+	//sets the license plate number
+	public void setLicenseNumber(String licenNum) {
+		licenseNum=licenNum;
+	}
+	//recieves the license plate number
+	public String getLicenseNumber() {
+		return licenseNum;
+	}
 
-	public void setIns(String ins){insurComp=ins;}
-	public String getIns(){return insurComp;}
+	//sets the insurance company
+	public void setIns(String ins) {
+		insurComp=ins;
+	}
+	//receives the insurance company
+	public String getIns() {
+		return insurComp;
+	}
 
-	public void setCardNum(String num){cardNum=num;}
-	public String getCardNum(){return cardNum;}
+	//sets the card number
+	public void setCardNum(String num) { 
+		cardNum=num;
+	}
+	//recives the card number
+	public String getCardNum() {
+		return cardNum;
+	}
 
-	public void addToNumOfRent(){numPrevRentals++;}
-	public int getNumOfRentals(){return numPrevRentals;}
+	//sets the number of rentals
+	public void addToNumOfRent() {
+		numPrevRentals++;
+	}
+	//gets the number of rentals
+	public int getNumOfRentals() {
+		return numPrevRentals;
+	}
 
-	public void setHasAppointment(boolean apt){hasAppoint=apt;}
-	public boolean getHasAppoinment(){return hasAppoint;}
+	//sets the appointment
+	public void setHasAppointment(boolean apt) {
+		hasAppoint=apt;
+	}
+	//gets the appointment
+	public boolean getHasAppoinment() {
+		return hasAppoint;
+	}
 
-	public void setPickTime(String date){appointPickUp=date;}
-	public String getPickTime(){return appointPickUp;}
+	//sets the pick up time
+	public void setPickTime(String date) {
+		appointPickUp=date;
+	}
+	//recives the pick up time
+	public String getPickTime() {
+		return appointPickUp;
+	}
 
-	public void setDropTime(String date){appointDropOff=date;}
-	public String getDropTime(){return appointDropOff;}
+	//sets the drop off date for an appointment
+	public void setDropTime(String date) {
+		appointDropOff=date;
+	}
+	//recives the drop off date for an appointment
+	public String getDropTime() {
+		return appointDropOff;
+	}
 
-	public void setCarLate(boolean lt){carLate=lt;}
-	public boolean getCarLate(){return carLate;}
+	//check if the car is returned late
+	public void setCarLate(boolean lt) {
+		carLate=lt;
+	}
+	//returns true or false if the car is late or not
+	public boolean getCarLate() {
+		return carLate;
+	}
 	
-	/*
-	 * Assigns the customer’s ID to the correspondent instance variable.
-	 * @param id, the customer’s id.
-	 */
+	//sets the customer's ID
 	public void setCustID(String custID) 													// first 3 methods gather values for variables custID, name, and address.
 	{
 		this.custID = custID;
 	}
 	
-	/*
-	 * Assigns the customer’s name to the correspondent instance variable.
-	 * @param custName, the customer’s name.
-	 */
+	//sets the customer's name
 	public void setCustName(String custName) 
 	{
 		this.custName = custName;
 	}
 	
-	/*
-	 * Assigns the customer’s city to the correspondent instance variable.
-	 * @param custCity, the customer’s city.
-	 */
+	//sets the customer's address
 	public void setCustAddress(String custCity) 
 	{
 		this.custAddress = custCity;
 	}
 	
-	/*
-	 * Returns the customer’s id.
-	 * @return, customer’s id.
-	 */
+	//recieves the customer's ID
 	public String getCustID() 																	// next 4 methods allow access to variables custID, name, and city and number of elements in array list .
 	{
 		return custID;
 	}
 	
-	/*
-	 * Returns the customer’s name.
-	 * @return, the customer's name.
-	 */
+	//recieves the customer's name
 	public String getCustName()  
 	{
 		return custName;
 	}
 	
-	/*
-	 * Returns the customer’s city.
-	 * @return, the customer's city.
-	 */
+	//recieves the customer's address
 	public String getCustAddress()   
 	{
 		return custAddress;
 	}
 	
-	
+	 //toString method that prints out the report for the customer's
 	public String toString()
 	{
 		String space = " ";
@@ -131,8 +173,5 @@ public class Customer
 		
 		return s;
 	}
-	
-	
-	
-	
 }
+	
