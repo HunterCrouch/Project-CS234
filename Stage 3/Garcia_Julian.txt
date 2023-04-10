@@ -1,0 +1,2 @@
+I did the comments in the customer and employee class
+I also did some small adjustments in the main class as well
