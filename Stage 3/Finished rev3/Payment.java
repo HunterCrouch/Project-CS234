@@ -146,6 +146,7 @@ public class Payment
         vehi=vehicle;
         System.out.println("enter the new mileage of the vehicle(old mileage:"+vehi.getMileage()+"): ");
         this.miles = in.nextDouble()-vehicle.getMileage();
+        vehicle.setMileage(vehicle.getMileage()+(int)this.miles);
 
         System.out.println("enter date of pickup date(mm/dd/yyyy)");
         String pickup = in.next();
