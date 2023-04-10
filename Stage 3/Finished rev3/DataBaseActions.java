@@ -80,10 +80,10 @@ public class DataBaseActions
 			System.out.println("enter cust Adress: ");
 			custAddress = in.nextLine();
 			
-			System.out.println("enter pick up time in dd/mm/yyyy format: ");
+			System.out.println("enter pick up time in mm/dd/yyyy format: ");
 			pickUpTime = in.nextLine();
 			
-			System.out.println("enter drop off time in dd/mm/yyyy format: ");
+			System.out.println("enter drop off time in mm/dd/yyyy format: ");
 			dropOffTime = in.nextLine();
 			
 			System.out.println("enter License number: ");
@@ -189,10 +189,10 @@ public class DataBaseActions
 			System.out.println("enter cust Adress: ");
 			custAddress = in.nextLine();
 			
-			System.out.println("enter pick up time: ");
+			System.out.println("enter pick up time in mm/dd/yyyy format: ");
 			pickUpTime = in.nextLine();
 			
-			System.out.println("enter drop off time: ");
+			System.out.println("enter drop off time in mm/dd/yyyy format: ");
 			dropOffTime = in.nextLine();
 			
 			System.out.println("enter License number: ");
