@@ -1,0 +1,5 @@
+for this stage of the product I helped with setting up the Main class by adding the skeleton for how the Main menu and sub menus can work. 
+(Hunter helped clean it up later to make it look more clean). I then worked on trying to find the right data structure for the data bases
+originaly thought about using arrays then swithed it to array list. (it was a little to late to use maps). I did some work on the Data base
+actions class, I worked on the method that initiates the data base, the methods that work on the customers lists, organized the tostring methods
+helped with the comments, created the user guide pdf, and a couple other little things.  
