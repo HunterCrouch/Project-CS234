@@ -1,0 +1,3 @@
+for this stage of the project I helped with creating some of the windows in NetBeans. I helped with gathering information from the text fields,
+storing the info on to the arraylist, also outputting the arraylist info on to the textfields. I worked with Hunter to read and write information from the textfiles. I also helped with creating 
+some of the buttons that led to other windows.
