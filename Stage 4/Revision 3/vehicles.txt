@@ -1,0 +1,3 @@
+Van@0.1@85.75@GYK1235@120135@5.0@false@3@false@1004@true@Ford Transit@2009@White@
+Car@0.15@51.8@BLX5248@80458@9.0@false@2@true@1005@false@Toyota Camry@2015@Blue@
+Truck@0.05@67.55@BXY4689@150198@15.0@true@4@false@1006@true@Ford F150@2008@Red@

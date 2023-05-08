@@ -1,0 +1,4 @@
+Empl@Laura@1613 2nd Street@White@Female@1-408-123-4567@30.0@14.56@false@397
+Empl@Matthew@898 Roosevelt Rd@n/a@Male@1-408-456-1936@40.0@17.65@true@304
+Empl@Eduardo@9 Apricot st@n/a@Male@1-408-515-1986@20.0@16.42@false@300
+Empl@Greg@258 W creek ST@white@male@123-432-1223@20.0@14.0@true@305
